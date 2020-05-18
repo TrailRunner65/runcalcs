@@ -1,8 +1,8 @@
 package au.com.abstractcs.runcalcs.calcs;
 
 public enum Unit {
-    METRIC(1.0f),
-    IMPERIAL(1.6f);
+    IMPERIAL(1.60934f),
+    METRIC(0.621371f);
 
     private float unitValue;
 
