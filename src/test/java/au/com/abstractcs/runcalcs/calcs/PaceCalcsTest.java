@@ -1,7 +1,7 @@
 package au.com.abstractcs.runcalcs.calcs;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.BeforeAll;
 
 import java.time.LocalTime;
 
@@ -9,7 +9,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PaceCalcsTest {
 
-    private PaceCalcs paceCalcs = new PaceCalcs();
+    private PaceCalcs paceCalcs;
+
+    @BeforeEach
+    public void initEach() {
+        paceCalcs = new PaceCalcs();
+    }
 
     @Test
     public void shouldCalculateRacePaceFor10k() {
